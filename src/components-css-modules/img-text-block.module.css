@@ -1,0 +1,30 @@
+.textWrapper {
+  padding: 0 0 20px;
+}
+.textWrapper > * + * {
+  padding: 20px 0 0;
+}
+.img {
+  display: block;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .container {
+    margin: 0 0 0 -40px;
+  }
+  .inner {
+    display: flex;
+    width: 100%;
+  }
+  .textWrapper {
+    padding: 0 0 0 40px;
+    width: 50%;
+  }
+  .textWrapper > * + * {
+    padding: 20px 0 0;
+  }
+  .imgWrapper {
+    padding: 0 0 0 40px;
+    width: 50%;
+  }
+}
