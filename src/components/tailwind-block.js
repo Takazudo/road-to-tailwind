@@ -1,4 +1,4 @@
-export const ImgTextBlock = ({ children, src }) => (
+export const TailwindBlock = ({ children, src }) => (
   <div className="lg:ml-[-40px]">
     <div className="lg:flex w-full">
       <div className="

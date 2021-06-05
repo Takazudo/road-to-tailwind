@@ -1,6 +1,6 @@
-import styles from './img-text-block.module.css';
+import styles from './css-modules-block.module.css';
 
-export const ImgTextBlock = ({ children, src }) => (
+export const CssModulesBlock = ({ children, src }) => (
   <div className={styles.container}>
     <div className={styles.inner}>
       <div className={styles.textWrapper}>

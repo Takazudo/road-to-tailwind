@@ -34,7 +34,7 @@ const styles = {
   `,
 };
 
-export const ImgTextBlock = ({ children, src }) => (
+export const GooberBlock = ({ children, src }) => (
   <div className={styles.container}>
     <div className={styles.inner}>
       <div className={styles.textWrapper}>{children}</div>

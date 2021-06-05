@@ -16,7 +16,7 @@ const Large = ({ children, src, className }) => (
   </div>
 );
 
-export const ImgTextBlock = (props) => (
+export const TailwindSeparateBlock = (props) => (
   <>
     <Small className="lg:hidden" {...props} />
     <Large className="hidden lg:block" {...props} />

@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
+
+/* BemBlock */
+
+.BemBlock__TextWrapper {
+  padding: 0 0 20px;
+}
+.BemBlock__TextWrapper > * + * {
+  padding: 20px 0 0;
+}
+.BemBlock__Img {
+  display: block;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .BemBlock {
+    margin: 0 0 0 -40px;
+  }
+  .BemBlock__Inner {
+  display: flex;
+    width: 100%;
+  }
+  .BemBlock__TextWrapper {
+    padding: 0 0 0 40px;
+    width: 50%;
+  }
+  .BemBlock__TextWrapper > * + * {
+    padding: 20px 0 0;
+  }
+  .BemBlock__ImgWrapper {
+    padding: 0 0 0 40px;
+    width: 50%;
+  }
+}
+
+/* BemTailwindBlock */
+
+.BemTailwindBlock {
+  @apply lg:ml-[-40px];
+}
+.BemTailwindBlock__Inner {
+  @apply lg:flex w-full;
+}
+.BemTailwindBlock__TextWrapper {
+  @apply pb-[20px] space-y-[20px];
+  @apply lg:pl-[40px] lg:w-1/2;
+}
+.BemTailwindBlock__ImgWrapper {
+  @apply lg:pl-[40px] lg:w-1/2;
+}
+.BemTailwindBlock__Img {
+  display: block;
+  width: 100%;
+}
+
+
+
 @tailwind utilities;
