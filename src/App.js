@@ -15,6 +15,10 @@ function App() {
   return (
     <Layout>
 
+      <ul className="pb-lg text-lg">
+        <li>👉 <a href="https://github.com/Takazudo/road-to-tailwind" className="text-indigo-600 underline">github repository</a></li>
+      </ul>
+
       <Label>Just a Tailwind</Label>
 
       <div className="lg:ml-[-40px]">
