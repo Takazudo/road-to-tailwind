@@ -41,11 +41,11 @@ export const ComplicatedBlock = () => (
   >
     <div
       className={`
-      mx-auto
-      w-full lg:w-[80%]
-      h-[200px] lg:h-[300px]
-      ${styles.gradient2} ${styles.shadow}
-    `}
+        mx-auto
+        w-full lg:w-[80%]
+        h-[200px] lg:h-[300px]
+        ${styles.gradient2} ${styles.shadow}
+      `}
     ></div>
     <div
       className={`

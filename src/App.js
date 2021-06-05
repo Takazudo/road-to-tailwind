@@ -3,6 +3,7 @@ import { Layout } from "./components/layout";
 
 import { CssModulesBlock } from './components/css-modules-block';
 import { GooberBlock } from './components/goober-block';
+import { GooberStyledBlock } from './components/goober-styled-block';
 import { TailwindBlock } from "./components/tailwind-block";
 import { GooberThemeBlock } from './components/goober-theme-block';
 import { TailwindThemeBlock } from "./components/tailwind-theme-block";
@@ -13,6 +14,21 @@ import { ComplicatedBlock } from "./components/complicated-block";
 function App() {
   return (
     <Layout>
+
+      <Label>Just a Tailwind</Label>
+
+      <div className="lg:ml-[-40px]">
+        <div className="lg:flex w-full">
+          <div className="pb-[20px] space-y-[20px] lg:pl-[40px] lg:w-1/2">
+            <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+            <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+            <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+          </div>
+          <div className="lg:pl-[40px] lg:w-1/2">
+            <img className="block w-full" src="https://placekitten.com/400/300" alt="" />
+          </div>
+        </div>
+      </div>
 
       <Label>BemBlock</Label>
 
@@ -59,6 +75,14 @@ function App() {
         <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
         <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
       </GooberBlock>
+
+      <Label>GooberStyledBlock</Label>
+
+      <GooberStyledBlock src="https://placekitten.com/400/300">
+        <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+        <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+        <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+      </GooberStyledBlock>
 
       <Label>TailwindBlock</Label>
 
