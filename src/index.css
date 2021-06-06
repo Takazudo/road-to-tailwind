@@ -50,8 +50,7 @@
   @apply lg:pl-[40px] lg:w-1/2;
 }
 .BemTailwindBlock__Img {
-  display: block;
-  width: 100%;
+  @apply block w-full;
 }
 
 
